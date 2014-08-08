@@ -1,0 +1,33 @@
+" Colorscheme
+colorscheme peaksea
+
+" Font
+set guifont=Meslo\ LG\ S\ for\ Powerline:h12
+
+" Fullscreen on startup
+if has('gui_running')
+"    set fu
+endif
+
+" No scrollbars
+set guioptions-=r
+set guioptions-=R
+set guioptions-=l
+set guioptions-=L
+
+" CTRLP Files, Recents, Buffers
+nnoremap <silent> <leader>f :CtrlP<CR>
+nnoremap <silent> <leader>r :CtrlPMRU<CR>
+nnoremap <silent> <leader>b :CtrlPBuffer<CR>
+
+" Disable AutoClose and Surround bundles
+"UnBundle 'tpope/vim-surround'
+"UnBundle 'spf13/vim-autoclose'
+
+" Quick open config files
+map <leader>ec :args ~/.vimrc.before ~/.vimrc.before.local ~/.vimrc ~/.vimrc.local \| all<CR>
+
+" Maximize height without entering full screen mode
+set lines=999
+" Maximize width without entering full screen mode
+"set columns=9999
