@@ -25,7 +25,7 @@ nnoremap <silent> <leader>b :CtrlPBuffer<CR>
 "UnBundle 'spf13/vim-autoclose'
 
 " Quick open config files
-map <leader>ec :args ~/.vimrc.before ~/.vimrc.before.local ~/.vimrc ~/.vimrc.local \| all<CR>
+map <leader>ec :args ~/.vimrc.before ~/dotfiles/vimrc.before.local ~/.vimrc ~/dotfiles/vimrc.local \| all<CR>
 
 " Maximize height without entering full screen mode
 set lines=999
