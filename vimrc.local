@@ -2,11 +2,11 @@
 colorscheme peaksea
 
 " Font
-set guifont=Meslo\ LG\ S\ for\ Powerline:h12
+set guifont=Meslo\ LG\ S\ for\ Powerline:h14
 
 " Fullscreen on startup
 if has('gui_running')
-    set fu
+    "set fu
 endif
 
 " No scrollbars
