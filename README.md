@@ -5,7 +5,7 @@ My personal configuration files.
 Clone to home directory...
 
 ```
-git clone git@github.com:mddubs/dotfiles.git ~/dotfiles 
+git clone git@github.com:mddubs/dotfiles.git ~/dotfiles
 ```
 
 Then symlink the files you want to use...
