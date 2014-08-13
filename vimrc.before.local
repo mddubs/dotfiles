@@ -29,3 +29,6 @@ let g:spf13_no_fastTabs = 1
 " Switching buffers
 "map <C-Tab> :bnext<cr>
 "map <C-S-Tab> :bprevious<cr>
+
+" Increase NerdTree panel width
+let g:NERDTreeWinSize = 60
