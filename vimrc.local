@@ -2,7 +2,7 @@
 colorscheme peaksea
 
 " Font
-set guifont=Meslo\ LG\ S\ for\ Powerline:h14
+set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 
 " Fullscreen on startup
 if has('gui_running')
