@@ -1,5 +1,6 @@
 " Colorscheme
-colorscheme peaksea
+"colorscheme peaksea
+colorscheme molokai
 
 " Font
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
@@ -28,4 +29,4 @@ cd ~/Projects/
 
 " Remove buffers from statusline then enable airline top list
 UnBundle 'bling/vim-bufferline'
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled=1
