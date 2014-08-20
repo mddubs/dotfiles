@@ -48,3 +48,9 @@ map <leader>ec :args ~/.vimrc.before ~/dotfiles/vimrc.before.local ~/.vimrc ~/do
 
 " Delete buffer without closing window
 nnoremap <silent> <leader>bd :bn\|bd #<CR>
+
+" Map cope window
+map <leader>c :copen<CR>
+
+" Fast saving
+nmap <leader>w :w!<cr>
