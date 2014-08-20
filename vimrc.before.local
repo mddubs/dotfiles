@@ -39,7 +39,7 @@ map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>
 
 " CTRLP Files, Recents, Buffers
-nnoremap <silent> <leader>f :CtrlP<CR>
+"nnoremap <silent> <leader>f :CtrlP<CR>
 nnoremap <silent> <leader>r :CtrlPMRU<CR>
 nnoremap <silent> <leader>b :CtrlPBuffer<CR>
 
@@ -47,10 +47,10 @@ nnoremap <silent> <leader>b :CtrlPBuffer<CR>
 map <leader>ec :args ~/.vimrc.before ~/dotfiles/vimrc.before.local ~/.vimrc ~/dotfiles/vimrc.local \| vertical all<CR>
 
 " Delete buffer without closing window
-nnoremap <silent> <leader>bd :bn\|bd #<CR>
+"nnoremap <silent> <leader>bd :bn\|bd #<CR>
 
 " Map cope window
-map <leader>c :copen<CR>
+map <leader>c :botright cope<cr>
 
 " Fast saving
 nmap <leader>w :w!<cr>
