@@ -3,32 +3,32 @@ let g:spf13_leader='\'
 let g:spf13_localleader='_'
 
 " Try to start with regular fonts
-let g:spf13_no_big_font = 1
+let g:spf13_no_big_font=1
 
 " Enable powerline symbols after settings Meslo Powerline font in .vimrc
 let g:airline_powerline_fonts=1
 
 " Preserve S-H and S-L for Head and Last
-let g:spf13_no_fastTabs = 1
+let g:spf13_no_fastTabs=1
 
 " Disable Omni Complete
-"let g:spf13_no_omni_complete = 1
+"let g:spf13_no_omni_complete=1
 
 " Switching buffers (created shortcuts in MacVim instead)
 "map <C-Tab> :bnext<cr>
 "map <C-S-Tab> :bprevious<cr>
 
 " Increase NerdTree panel width
-let g:NERDTreeWinSize = 60
+let g:NERDTreeWinSize=60
 
 " Prevent automatically changing to open file directory
-"let g:spf13_no_autochdir = 1
+"let g:spf13_no_autochdir=1
 
 " Disable autoclose quotes because of comments like this
-let g:autoclose_vim_commentmode = 1
+let g:autoclose_vim_commentmode=1
 
 " Disable Easy Windows...
-let g:spf13_no_easyWindows = 1
+let g:spf13_no_easyWindows=1
 
 " ... and then map normal window switching without collapsing and expanding
 " windows, which is unnecessary when you can just switch buffers and not screw up
@@ -45,3 +45,6 @@ nnoremap <silent> <leader>b :CtrlPBuffer<CR>
 
 " Quick open config files
 map <leader>ec :args ~/.vimrc.before ~/dotfiles/vimrc.before.local ~/.vimrc ~/dotfiles/vimrc.local \| vertical all<CR>
+
+" Delete buffer without closing window
+nnoremap <silent> <leader>bd :bp\|bd #<CR>
