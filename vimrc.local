@@ -1,6 +1,7 @@
 " Colorscheme
 "colorscheme peaksea
-colorscheme molokai
+"colorscheme molokai
+colorscheme ir_black
 
 " Font
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
