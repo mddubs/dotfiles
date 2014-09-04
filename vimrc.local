@@ -22,7 +22,7 @@ set lines=999
 "set columns=9999
 
 " Set default working directory
-cd ~/Projects/
+"cd ~/Projects/
 
 " Disable bundles, then run :BundleClean!
 "UnBundle 'tpope/vim-surround'
