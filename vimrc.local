@@ -32,3 +32,6 @@ set lines=999
 UnBundle 'bling/vim-bufferline'
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemod=':t'
+
+" Remove python mode to free up <leader>d
+UnBundle 'klen/python-mode'

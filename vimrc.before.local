@@ -62,3 +62,6 @@ map <leader>c :botright cope<cr>
 
 " Fast saving
 nmap <leader>w :w!<cr>
+
+" Quick buffer delete
+nnoremap <leader>bd :bdelete<cr>
