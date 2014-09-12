@@ -31,3 +31,4 @@ set lines=999
 " Remove buffers from statusline then enable airline top list
 UnBundle 'bling/vim-bufferline'
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#fnamemod=':t'
