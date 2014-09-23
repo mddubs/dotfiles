@@ -48,9 +48,12 @@ let g:airline_powerline_fonts=1
 colorscheme molokai
 
 " kien/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = '\v[\/](cache|cached)|(\.(swp|ico|git|svn))$'
+nnoremap <leader>ef :CtrlP<CR>
+nnoremap <leader>er :CtrlPMRUFiles<CR>
+nnoremap <leader>eb :CtrlPBuffer<CR>
 
 " ntpeters/vim-better-whitespace
 " :StripWhitespace
