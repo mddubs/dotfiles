@@ -57,6 +57,8 @@ nnoremap <leader>eb :CtrlPBuffer<cr>
 
 " ntpeters/vim-better-whitespace
 " :StripWhitespace
+nnoremap <leader>wt :ToggleWhitespace<cr>
+nnoremap <leader>ws :StripWhitespace<cr>
 
 " tpope/vim-fugitive
 nnoremap <leader>gs :Gstatus<cr>
