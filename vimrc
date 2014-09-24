@@ -6,6 +6,10 @@
 " :so %    (current file)
 " :so $MYVIMRC
 
+" VIM HELP!!!
+" :vert help
+" c-], c-o, tag forward/back
+
 " First, load plugins
 source ~/.vimrc.vundles
 
@@ -13,6 +17,9 @@ source ~/.vimrc.vundles
 
 " BASIC SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Edit config
+nnoremap <leader>ec :e ~/dotfiles/vimrc<cr>
 
 " Keep backup and swap clutter out of working directories
 set backupdir=/tmp/
@@ -34,6 +41,15 @@ map <c-j> <c-w><down>
 map <c-l> <c-w><right>
 map <c-h> <c-w><left>
 
+" Search, find, replace
+" /?, search down/up   nN, next/prev results
+" *#, search word down/up
+" :%s/Foo/Bar/g (range % entire file, s substitute, g all not just first occurrence)
+set incsearch
+
+" Navigation
+" {}, paragraph up/down
+" HML, head/middle/last
 
 
 " PLUGIN SETTINGS
