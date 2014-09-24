@@ -14,6 +14,10 @@ source ~/.vimrc.vundles
 " BASIC SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Keep backup and swap clutter out of working directories
+set backupdir=/tmp/
+set directory=/tmp/
+
 " :echo &background
 set background=dark
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
