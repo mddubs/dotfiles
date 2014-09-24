@@ -25,10 +25,10 @@ if has('gui_running')
 endif
 
 " Easy window switching
-map <C-k> <C-w><Up>
-map <C-j> <C-w><Down>
-map <C-l> <C-w><Right>
-map <C-h> <C-w><Left>
+map <c-k> <c-w><up>
+map <c-j> <c-w><down>
+map <c-l> <c-w><right>
+map <c-h> <c-w><left>
 
 
 
@@ -36,8 +36,8 @@ map <C-h> <C-w><Left>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " scrooloose/nerdtree
-":nnoremap <unique> <leader>n :NERDTreeToggle<CR>
-nnoremap <c-n> :NERDTreeToggle<CR>
+":nnoremap <unique> <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 " bling/vim-airline
 set laststatus=2
@@ -51,15 +51,15 @@ colorscheme molokai
 "let g:ctrlp_map = '<c-p>'
 "let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = '\v[\/](cache|cached)|(\.(swp|ico|git|svn))$'
-nnoremap <leader>ef :CtrlP<CR>
-nnoremap <leader>er :CtrlPMRUFiles<CR>
-nnoremap <leader>eb :CtrlPBuffer<CR>
+nnoremap <leader>ef :CtrlP<cr>
+nnoremap <leader>er :CtrlPMRUFiles<cr>
+nnoremap <leader>eb :CtrlPBuffer<cr>
 
 " ntpeters/vim-better-whitespace
 " :StripWhitespace
 
 " tpope/vim-fugitive
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gw :Gwrite<CR>
-nnoremap <leader>gr :Gread<CR>
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gw :Gwrite<cr>
+nnoremap <leader>gr :Gread<cr>
