@@ -59,26 +59,22 @@ set incsearch
 ":nnoremap <unique> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
+" flazz/vim-colorschemes
+let g:solarized_termcolors = 256
+colorscheme solarized
+
 " bling/vim-airline
 set laststatus=2
 let g:airline_powerline_fonts=1
-"let g:airline_theme='dark'
-
-" flazz/vim-colorschemes
-"colorscheme peaksea
-"colorscheme molokai
-colorscheme ir_black
+let g:airline_theme='dark'
 
 " kien/ctrlp.vim
-"let g:ctrlp_map = '<c-p>'
-"let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_custom_ignore = '\v[\/](cache|cached)|(\.(swp|ico|git|svn))$'
 nnoremap <leader>ef :CtrlP<cr>
 nnoremap <leader>er :CtrlPMRUFiles<cr>
 nnoremap <leader>eb :CtrlPBuffer<cr>
 
 " ntpeters/vim-better-whitespace
-" :StripWhitespace
 nnoremap <leader>wt :ToggleWhitespace<cr>
 nnoremap <leader>ws :StripWhitespace<cr>
 
