@@ -84,3 +84,8 @@ nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gr :Gread<cr>
+
+" edkolev/tmuxline.vim
+let g:tmuxline_theme='vim_status_line_3'
+let g:tmuxline_preset='jellybeans'
+let g:airline#extensions#tmuxline#enabled=0

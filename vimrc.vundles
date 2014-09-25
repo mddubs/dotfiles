@@ -18,6 +18,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
+Plugin 'edkolev/tmuxline.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
