@@ -29,7 +29,7 @@ set directory=/tmp/
 set background=dark
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 syntax on
-"set number!
+set number!
 set guioptions=egm
 if has('gui_running')
     set fu
