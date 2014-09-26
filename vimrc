@@ -44,6 +44,7 @@ map <c-h> <c-w><left>
 " *#, search word down/up
 " :%s/Foo/Bar/g (range % entire file, s substitute, g all not just first occurrence)
 set incsearch
+set hlsearch
 
 " Navigation
 " {}, paragraph up/down
