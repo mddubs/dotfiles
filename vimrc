@@ -53,15 +53,14 @@ set hlsearch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " scrooloose/nerdtree
 ":nnoremap <unique> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " flazz/vim-colorschemes
-"let g:solarized_termcolors = 16
-"colorscheme solarized
-colorscheme ir_black
+let g:solarized_termcolors = 16
+colorscheme solarized
+"colorscheme ir_black
 
 " bling/vim-airline
 set laststatus=2
