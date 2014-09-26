@@ -13,17 +13,15 @@
 " First, load plugins
 source ~/.vimrc.vundles
 
-
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Edit config
 nnoremap <leader>ec :e ~/dotfiles/vimrc<cr>
 
 " Keep backup and swap clutter out of working directories
-set backupdir=/tmp/
-set directory=/tmp/
+set backupdir=/tmp//
+set directory=/tmp//
 
 " :echo &background
 set background=dark
@@ -51,7 +49,7 @@ set incsearch
 " {}, paragraph up/down
 " HML, head/middle/last
 
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -86,6 +84,6 @@ nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gr :Gread<cr>
 
 " edkolev/tmuxline.vim
-let g:tmuxline_theme='vim_status_line_3'
-let g:tmuxline_preset='jellybeans'
+"let g:tmuxline_theme='vim_status_line_3'
+"let g:tmuxline_preset='jellybeans'
 let g:airline#extensions#tmuxline#enabled=0
