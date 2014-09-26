@@ -33,12 +33,6 @@ if has('gui_running')
     set fu
 endif
 
-" Easy window switching
-map <c-k> <c-w><up>
-map <c-j> <c-w><down>
-map <c-l> <c-w><right>
-map <c-h> <c-w><left>
-
 " Search, find, replace
 " /?, search down/up   nN, next/prev results
 " *#, search word down/up
@@ -87,3 +81,6 @@ nnoremap <leader>gr :Gread<cr>
 "let g:tmuxline_theme='vim_status_line_3'
 "let g:tmuxline_preset='jellybeans'
 let g:airline#extensions#tmuxline#enabled=0
+
+" christoomey/vim-tmux-navigator
+" Sets C-hjkl window movement automatically.
