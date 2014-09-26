@@ -60,9 +60,9 @@ set incsearch
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " flazz/vim-colorschemes
-"let g:solarized_termcolors = 256
-let g:solarized_termcolors = 16
-colorscheme solarized
+"let g:solarized_termcolors = 16
+"colorscheme solarized
+colorscheme ir_black
 
 " bling/vim-airline
 set laststatus=2
