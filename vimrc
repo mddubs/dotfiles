@@ -27,7 +27,8 @@ set directory=/tmp//
 set background=dark
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 syntax on
-set number!
+"set number!
+set number
 set guioptions=egm
 if has('gui_running')
     set fu
@@ -44,6 +45,15 @@ set hlsearch
 " {}, paragraph up/down
 " HML, head/middle/last
 
+" Tabs
+set smarttab
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Split vertical windows to the right instead of left
+set splitright
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
