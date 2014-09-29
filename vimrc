@@ -29,6 +29,7 @@ set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 syntax on
 "set number!
 set number
+set cursorline
 set guioptions=egm
 if has('gui_running')
     set fu
