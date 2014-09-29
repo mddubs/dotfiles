@@ -55,6 +55,10 @@ set expandtab
 
 " Split vertical windows to the right instead of left
 set splitright
+
+" Completion
+" Ctrl-N auto complete next, NICE.
+" Tags, Ctags, generate text file for definitions, but not instantiations.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
