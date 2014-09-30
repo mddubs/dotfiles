@@ -13,6 +13,8 @@ set number
 set cursorline
 set incsearch
 set hlsearch
+" Always show status bar
+set laststatus=2
 " Keep backup and swap clutter out of working directories
 set backupdir=/tmp//
 set directory=/tmp//
@@ -34,19 +36,17 @@ set splitright
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" scrooloose/nerdtree
-":nnoremap <unique> <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>n :NERDTreeToggle<cr>
-
 " flazz/vim-colorschemes
 let g:solarized_termcolors = 16
 colorscheme solarized
-"colorscheme ir_black
 
 " bling/vim-airline
-set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
+
+" scrooloose/nerdtree
+":nnoremap <unique> <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 " kien/ctrlp.vim
 let g:ctrlp_custom_ignore = '\v[\/](cache|cached)|(\.(swp|ico|git|svn))$'
@@ -67,6 +67,7 @@ nnoremap <leader>gr :Gread<cr>
 " edkolev/tmuxline.vim
 "let g:tmuxline_theme='vim_status_line_3'
 "let g:tmuxline_preset='jellybeans'
+" Disable plugin since config was generated and stored in .tmux.conf
 let g:airline#extensions#tmuxline#enabled=0
 
 " christoomey/vim-tmux-navigator
