@@ -1,4 +1,4 @@
-" Matt Williamson
+" Matt Williamson's VIM configuration.
 " This is my own VIM configuration, starting from scratch.
 " ln -s ~/dotfiles/vimrc ~/.vimrc
 
