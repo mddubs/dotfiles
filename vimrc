@@ -1,14 +1,4 @@
 " Matt Williamson's VIM configuration.
-" This is my own VIM configuration, starting from scratch.
-" ln -s ~/dotfiles/vimrc ~/.vimrc
-
-" Reload vim config without restarting
-" :so %    (current file)
-" :so $MYVIMRC
-
-" VIM HELP!!!
-" :vert help
-" c-], c-o, tag forward/back
 
 " First, load plugins
 source ~/dotfiles/vimrc.vundles
@@ -16,49 +6,31 @@ source ~/dotfiles/vimrc.vundles
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Edit config
-nnoremap <leader>ec :e ~/dotfiles/vimrc<cr>
-
-" Keep backup and swap clutter out of working directories
-set backupdir=/tmp//
-set directory=/tmp//
-
-" :echo &background
 set background=dark
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
 syntax on
-"set number!
 set number
 set cursorline
+set incsearch
+set hlsearch
+" Keep backup and swap clutter out of working directories
+set backupdir=/tmp//
+set directory=/tmp//
+" Remove scrollbars
 set guioptions=egm
+" Set fullscreen on startup
 if has('gui_running')
     set fu
 endif
-
-" Search, find, replace
-" /?, search down/up   nN, next/prev results
-" *#, search word down/up
-" :%s/Foo/Bar/g (range % entire file, s substitute, g all not just first occurrence)
-set incsearch
-set hlsearch
-
-" Navigation
-" {}, paragraph up/down
-" HML, head/middle/last
-
-" Tabs
+" Indentation
 set smarttab
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
 " Split vertical windows to the right instead of left
 set splitright
 
-" Completion
-" Ctrl-N auto complete next, NICE.
-" Tags, Ctags, generate text file for definitions, but not instantiations.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
