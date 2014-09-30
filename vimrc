@@ -11,7 +11,7 @@
 " c-], c-o, tag forward/back
 
 " First, load plugins
-source ~/.vimrc.vundles
+source ~/dotfiles/vimrc.vundles
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC SETTINGS
