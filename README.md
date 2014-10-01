@@ -1,5 +1,4 @@
-mddubs / dotfiles
-=================
+# Overview
 Matt Williamson's configuration files.
 
 My config files have been created with this in mind...
