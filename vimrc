@@ -45,7 +45,6 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
 
 " scrooloose/nerdtree
-":nnoremap <unique> <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " kien/ctrlp.vim

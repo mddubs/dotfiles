@@ -7,14 +7,17 @@ Matt Williamson's VIM notes.
 :set number!        " toggle setting
 
 " Search, find, replace
-" /?, search down/up   nN, next/prev results
-" *#, search word down/up
-" :%s/Foo/Bar/g (range % entire file, s substitute, g all not just first occurrence)
-"
+/?, search down/up   nN, next/prev results
+*#, search word down/up
+:%s/Foo/Bar/g (range % entire file, s substitute, g all not just first occurrence)
+
 " Navigation
-" {}, paragraph up/down
-" HML, head/middle/last
-"
+{}, paragraph up/down
+HML, head/middle/last
+
 " Completion
-" Ctrl-N auto complete next, NICE.
-" Tags, Ctags, generate text file for definitions, but not instantiations.
+Ctrl-N auto complete next, NICE.
+Tags, Ctags, generate text file for definitions, but not instantiations.
+
+" Mappings
+:nnoremap <unique> <leader>n :NERDTreeToggle<cr>
