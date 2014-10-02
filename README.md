@@ -17,3 +17,6 @@ Then symlink the files you want to use...
 ```
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ```
+
+# Screenshot
+![Alt text](/screenshot.png?raw=true)
