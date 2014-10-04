@@ -32,6 +32,8 @@ set shiftwidth=4
 set expandtab
 " Split vertical windows to the right instead of left
 set splitright
+" Clear current search highlights without disabling for next search
+nnoremap <leader>/ :noh<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
