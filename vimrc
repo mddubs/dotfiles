@@ -34,7 +34,8 @@ set expandtab
 set splitright
 " Clear current search highlights without disabling for next search
 nnoremap <leader>/ :noh<cr>
-
+" Paste
+nnoremap <leader>p :set paste!<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
