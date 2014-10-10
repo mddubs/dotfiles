@@ -36,6 +36,8 @@ set splitright
 nnoremap <leader>/ :noh<cr>
 " Paste
 nnoremap <leader>p :set paste!<cr>
+" Switch to current file's directory
+nnoremap <leader>cd :cd %:h<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
