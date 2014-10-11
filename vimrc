@@ -50,7 +50,9 @@ let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
 
 " scrooloose/nerdtree
-nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>nt :NERDTreeToggle<cr>
+nnoremap <leader>nf :NERDTreeFind<cr>
+nnoremap <leader>nc :NERDTreeCWD<cr>
 
 " kien/ctrlp.vim
 let g:ctrlp_custom_ignore = '\v[\/](cache|cached)|(\.(swp|ico|git|svn))$'
