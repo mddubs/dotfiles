@@ -38,6 +38,8 @@ nnoremap <leader>/ :noh<cr>
 nnoremap <leader>p :set paste!<cr>
 " Switch to current file's directory
 nnoremap <leader>cd :cd %:h<cr>
+" Filetype Highlighting
+autocmd BufRead,BufNewFile *.conf setfiletype conf
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
