@@ -18,6 +18,9 @@ set laststatus=2
 " Keep backup and swap clutter out of working directories
 set backupdir=/tmp//
 set directory=/tmp//
+" Use persistent undo
+set undofile
+set undodir=/tmp//
 " Remove scrollbars
 set guioptions=egm
 " Set fullscreen on startup
@@ -50,6 +53,8 @@ colorscheme solarized
 " bling/vim-airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " scrooloose/nerdtree
 nnoremap <leader>nt :NERDTreeToggle<cr>

@@ -20,6 +20,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'bufkill/bufkill.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
