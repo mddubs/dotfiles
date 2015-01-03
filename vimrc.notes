@@ -21,3 +21,6 @@ Tags, Ctags, generate text file for definitions, but not instantiations.
 
 " Mappings
 :nnoremap <unique> <leader>n :NERDTreeToggle<cr>
+
+" Buffers
+C-6 previous buffer
