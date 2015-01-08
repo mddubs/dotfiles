@@ -57,6 +57,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " scrooloose/nerdtree
+let NERDTreeQuitOnOpen = 1
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>nf :NERDTreeFind<cr>
 nnoremap <leader>nc :NERDTreeCWD<cr>
