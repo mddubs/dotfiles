@@ -41,8 +41,8 @@ nnoremap <leader>/ :noh<cr>
 nnoremap <leader>p :set paste!<cr>
 " Switch to current file's directory
 nnoremap <leader>cd :cd %:h<cr>
-" Filetype Highlighting
-autocmd BufRead,BufNewFile *.conf setfiletype conf
+" Filetype Syntax Highlighting
+autocmd BufNewFile,BufRead *.conf setfiletype conf
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -85,3 +85,7 @@ let g:airline#extensions#tmuxline#enabled=0
 
 " christoomey/vim-tmux-navigator
 " Sets C-hjkl window movement automatically.
+
+" lepture/vim-jinja
+" Twig syntax highlighting
+autocmd BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig setfiletype jinja
