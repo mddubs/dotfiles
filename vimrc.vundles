@@ -22,6 +22,7 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bufkill/bufkill.vim'
 Plugin 'lepture/vim-jinja'
+Plugin 'tpope/vim-commentary'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
