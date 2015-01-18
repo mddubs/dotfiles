@@ -13,6 +13,8 @@ set number
 set cursorline
 set incsearch
 set hlsearch
+" Allow switching buffers without saving
+set hidden
 " Always show status bar
 set laststatus=2
 " Keep backup and swap clutter out of working directories
