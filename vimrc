@@ -45,6 +45,8 @@ nnoremap <leader>p :set paste!<cr>
 nnoremap <leader>cd :cd %:h<cr>
 " Filetype Syntax Highlighting
 autocmd BufNewFile,BufRead *.conf setfiletype conf
+" Reload config
+nnoremap <leader>so :source $MYVIMRC<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,3 +94,8 @@ let g:airline#extensions#tmuxline#enabled=0
 " lepture/vim-jinja
 " Twig syntax highlighting
 autocmd BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig setfiletype jinja
+
+" Manually installed phpfolding.vim plugin (~/.vim/ftplugin/php)
+" Folding and unfolding
+"map <leader>f :set foldmethod=indent<cr>zM<cr>
+"map <leader>F :set foldmethod=manual<cr>zR<cr>
