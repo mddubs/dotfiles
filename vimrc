@@ -51,13 +51,13 @@ nnoremap <leader>so :source $MYVIMRC<cr>
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " flazz/vim-colorschemes
-set t_Co=16
 " let g:solarized_termcolors = 16
+set t_Co=16
 colorscheme solarized
 
 " bling/vim-airline
-let g:airline_powerline_fonts=1
 " let g:airline_theme='dark'
+let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -84,8 +84,6 @@ nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gr :Gread<cr>
 
 " edkolev/tmuxline.vim
-"let g:tmuxline_theme='vim_status_line_3'
-"let g:tmuxline_preset='jellybeans'
 " Disable plugin since config was generated and stored in .tmux.conf
 let g:airline#extensions#tmuxline#enabled=0
 
