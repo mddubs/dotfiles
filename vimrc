@@ -52,7 +52,7 @@ nnoremap <leader>so :source $MYVIMRC<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " flazz/vim-colorschemes
 set t_Co=16
-let g:solarized_termcolors = 16
+" let g:solarized_termcolors = 16
 colorscheme solarized
 
 " bling/vim-airline
