@@ -10,12 +10,12 @@ My config files have been created with this in mind...
 # Installation
 Clone to home directory...
 ```
-git clone git@github.com:mddubs/dotfiles ~/dotfiles
+git clone git@github.com:mddubs/dotfiles ~/.dotfiles
 ```
 
 Then symlink the files you want to use...
 ```
-ln -s ~/dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vimrc ~/.vimrc
 ```
 
 # Screenshot

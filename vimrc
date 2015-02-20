@@ -1,7 +1,7 @@
 " Matt Williamson's VIM configuration.
 
 " First, load plugins
-source ~/dotfiles/vimrc.vundles
+source ~/.dotfiles/vimrc.vundles
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC SETTINGS
@@ -52,8 +52,9 @@ nnoremap <leader>so :source $MYVIMRC<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " flazz/vim-colorschemes
 " let g:solarized_termcolors = 16
-set t_Co=16
-colorscheme solarized
+" set t_Co=16
+" colorscheme solarized
+" Ubuntu Numix theme looks the best with defaults!
 
 " bling/vim-airline
 " let g:airline_theme='dark'
