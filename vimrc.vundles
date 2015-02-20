@@ -20,7 +20,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'bufkill/bufkill.vim'
+" Plugin 'bufkill/bufkill.vim'
 Plugin 'lepture/vim-jinja'
 Plugin 'tpope/vim-commentary'
 

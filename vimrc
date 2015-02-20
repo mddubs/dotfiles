@@ -54,13 +54,24 @@ nnoremap <leader>so :source $MYVIMRC<cr>
 " let g:solarized_termcolors = 16
 " set t_Co=16
 " colorscheme solarized
-" Ubuntu Numix theme looks the best with defaults!
+" colorscheme ir_black
+" colorscheme grb256
+colorscheme bubblegum
 
 " bling/vim-airline
-" let g:airline_theme='dark'
+" let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#left_sep = ' '
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+
+" edkolev/tmuxline.vim
+" Disable auto theme once tmux.conf is setup for customized file.
+let g:airline#extensions#tmuxline#enabled=0
+" Fix off black background issues when running vim in tmux:
+" http://stackoverflow.com/questions/6427650/vim-in-tmux-background-color-changes-when-paging
+:set t_ut=
 
 " scrooloose/nerdtree
 let NERDTreeQuitOnOpen = 1
@@ -83,10 +94,6 @@ nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gw :Gwrite<cr>
 nnoremap <leader>gr :Gread<cr>
-
-" edkolev/tmuxline.vim
-" Disable plugin since config was generated and stored in .tmux.conf
-let g:airline#extensions#tmuxline#enabled=0
 
 " christoomey/vim-tmux-navigator
 " Sets C-hjkl window movement automatically.
