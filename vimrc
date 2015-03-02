@@ -4,6 +4,18 @@
 source ~/.dotfiles/vimrc.vundles
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SWAP/BACKUP/UNDO
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Create /tmp directories if they don't exist
+if isdirectory('/tmp/vim/') == 0
+    :silent !mkdir -p '/tmp/vim/swap/' '/tmp/vim/backup' '/tmp/vim/undo/'
+endif
+set directory=/tmp/vim/swap//
+set backupdir=/tmp/vim/backup//
+set undofile
+set undodir=/tmp/vim/undo//
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark
@@ -17,12 +29,6 @@ set hlsearch
 set hidden
 " Always show status bar
 set laststatus=2
-" Keep backup and swap clutter out of working directories
-set backupdir=/tmp//
-set directory=/tmp//
-" Use persistent undo
-set undofile
-set undodir=/tmp//
 " Remove scrollbars
 set guioptions=egm
 " Set fullscreen on startup
@@ -47,6 +53,7 @@ nnoremap <leader>cd :cd %:h<cr>
 autocmd BufNewFile,BufRead *.conf setfiletype conf
 " Reload config
 nnoremap <leader>so :source $MYVIMRC<cr>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -61,8 +68,8 @@ colorscheme bubblegum
 " bling/vim-airline
 " let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#fnamemod = ':t'
 " let g:airline#extensions#tabline#left_sep = ' '
 " let g:airline#extensions#tabline#left_alt_sep = '|'
 
