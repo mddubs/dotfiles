@@ -3,7 +3,6 @@
 " First, load plugins
 source ~/.dotfiles/vimrc.vundles
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SWAP/BACKUP/UNDO
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Create /tmp directories if they don't exist
@@ -15,46 +14,36 @@ set backupdir=/tmp/vim/backup//
 set undofile
 set undodir=/tmp/vim/undo//
 
+" SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" BASIC SETTINGS
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on
 set background=dark
 set guifont=Meslo\ LG\ S\ for\ Powerline:h12
-syntax on
 set number
 set cursorline
 set incsearch
 set hlsearch
-" Allow switching buffers without saving
-set hidden
-" Always show status bar
-set laststatus=2
-" Remove scrollbars
-set guioptions=egm
-" Set fullscreen on startup
-if has('gui_running')
-    set fu
-endif
+set wildmenu " Vim tab autocomplete
+set hidden " Allow switching buffers without saving
+set laststatus=2 " Always show status bar
+set guioptions=egm " Remove scrollbars
+set splitright " Split vertical windows to the right instead of left
+
 " Indentation
 set smarttab
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" Split vertical windows to the right instead of left
-set splitright
-" Clear current search highlights without disabling for next search
-nnoremap <leader>/ :noh<cr>
-" Paste
+
+" MAPPINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>/ :nohlsearch<cr>
 nnoremap <leader>p :set paste!<cr>
-" Switch to current file's directory
 nnoremap <leader>cd :cd %:h<cr>
-" Filetype Syntax Highlighting
 autocmd BufNewFile,BufRead *.conf setfiletype conf
-" Reload config
 nnoremap <leader>so :source $MYVIMRC<cr>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " flazz/vim-colorschemes
