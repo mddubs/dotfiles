@@ -23,11 +23,11 @@ set number
 set cursorline
 set incsearch
 set hlsearch
-set wildmenu " Vim tab autocomplete
-set hidden " Allow switching buffers without saving
-set laststatus=2 " Always show status bar
+set wildmenu       " Vim tab autocomplete
+set hidden         " Allow switching buffers without saving
+set laststatus=2   " Always show status bar
 set guioptions=egm " Remove scrollbars
-set splitright " Split vertical windows to the right instead of left
+set splitright     " Split vertical windows to the right instead of left
 
 " Indentation
 set smarttab
