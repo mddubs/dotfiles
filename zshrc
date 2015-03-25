@@ -5,3 +5,4 @@ TERM=xterm-256color
 
 # Aliases
 alias l='ls -a'
+alias gsh='git show'
