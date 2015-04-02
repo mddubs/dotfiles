@@ -28,6 +28,7 @@ set hidden         " Allow switching buffers without saving
 set laststatus=2   " Always show status bar
 set guioptions=egm " Remove scrollbars
 set splitright     " Split vertical windows to the right instead of left
+set splitbelow     " Split horizontal windows below instead of above
 autocmd BufNewFile,BufRead *.conf setfiletype conf
 
 " Indentation
