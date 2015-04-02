@@ -28,6 +28,7 @@ set hidden         " Allow switching buffers without saving
 set laststatus=2   " Always show status bar
 set guioptions=egm " Remove scrollbars
 set splitright     " Split vertical windows to the right instead of left
+autocmd BufNewFile,BufRead *.conf setfiletype conf
 
 " Indentation
 set smarttab
@@ -38,11 +39,13 @@ set expandtab
 
 " MAPPINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>/ :nohlsearch<cr>
-nnoremap <leader>p :set paste!<cr>
-nnoremap <leader>cd :cd %:h<cr>
-autocmd BufNewFile,BufRead *.conf setfiletype conf
-nnoremap <leader>so :source $MYVIMRC<cr>
+nmap <leader>/ :nohlsearch<cr>|       " turn off search highlighting
+nmap <leader>p :set paste!<cr>|       " toggle paste mode
+nmap <leader>cd :cd %:h<cr>|          " set current directory
+nmap <leader>so :source $MYVIMRC<cr>| " reload config
+nmap <leader>bn :bn<cr>|              " next buffer
+nmap <leader>bp :bp<cr>|              " prev buffer
+nmap <leader>bl :e #<cr>|             " last buffer
 
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -63,25 +66,25 @@ let g:airline#extensions#tmuxline#enabled=0
 
 " scrooloose/nerdtree
 let NERDTreeQuitOnOpen = 1
-nnoremap <leader>nt :NERDTreeToggle<cr>
-nnoremap <leader>nf :NERDTreeFind<cr>
-nnoremap <leader>nc :NERDTreeCWD<cr>
+nmap <leader>nt :NERDTreeToggle<cr>
+nmap <leader>nf :NERDTreeFind<cr>
+nmap <leader>nc :NERDTreeCWD<cr>
 
 " kien/ctrlp.vim
 let g:ctrlp_custom_ignore = '\v[\/](cache|cached)|(\.(swp|ico|git|svn))$'
-nnoremap <leader>ef :CtrlP<cr>
-nnoremap <leader>er :CtrlPMRUFiles<cr>
-nnoremap <leader>eb :CtrlPBuffer<cr>
+nmap <leader>ef :CtrlP<cr>
+nmap <leader>er :CtrlPMRUFiles<cr>
+nmap <leader>eb :CtrlPBuffer<cr>
 
 " ntpeters/vim-better-whitespace
-nnoremap <leader>wt :ToggleWhitespace<cr>
-nnoremap <leader>ws :StripWhitespace<cr>
+nmap <leader>wt :ToggleWhitespace<cr>
+nmap <leader>ws :StripWhitespace<cr>
 
 " tpope/vim-fugitive
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gc :Gcommit<cr>
-nnoremap <leader>gw :Gwrite<cr>
-nnoremap <leader>gr :Gread<cr>
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gw :Gwrite<cr>
+nmap <leader>gr :Gread<cr>
 
 " christoomey/vim-tmux-navigator
 " Sets C-hjkl window movement automatically.
