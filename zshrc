@@ -7,3 +7,4 @@ TERM=xterm-256color
 alias l='ls -A'
 alias la='ls -la'
 alias gsh='git show'
+alias src='source ~/.zshrc'
