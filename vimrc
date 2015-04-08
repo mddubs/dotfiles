@@ -51,7 +51,7 @@ nmap <leader>bl :e #<cr>|             " last buffer
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " flazz/vim-colorschemes
-colorscheme bubblegum
+colorscheme jellybeans
 
 " bling/vim-airline
 let g:airline_powerline_fonts=1
