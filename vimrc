@@ -86,8 +86,9 @@ nmap <leader>gs :Gstatus<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gw :Gwrite<cr>
 nmap <leader>gr :Gread<cr>
-nmap <leader>gp :Gpush<cr>
+nmap <leader>gf :Gfetch<cr>
 nmap <leader>gl :Gpull<cr>
+nmap <leader>gp :Gpush<cr>
 
 " christoomey/vim-tmux-navigator
 " Sets C-hjkl window movement automatically.
