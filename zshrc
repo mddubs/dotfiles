@@ -1,9 +1,9 @@
 # Matt Williamson's zsh config
 
-EDITOR=vim
+export EDITOR=vim
 
 # Fix vim colors
-TERM=xterm-256color
+export TERM=xterm-256color
 
 # Aliases
 alias l='ls -A'
