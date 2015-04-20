@@ -1,5 +1,7 @@
 # Matt Williamson's zsh config
 
+EDITOR=vim
+
 # Fix vim colors
 TERM=xterm-256color
 
