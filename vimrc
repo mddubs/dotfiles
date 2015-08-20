@@ -44,9 +44,6 @@ nmap <leader>/ :nohlsearch<cr>|       " turn off search highlighting
 nmap <leader>p :set paste!<cr>|       " toggle paste mode
 nmap <leader>cd :cd %:h<cr>|          " set current directory
 nmap <leader>so :source $MYVIMRC<cr>| " reload config
-nmap <leader>bn :bn<cr>|              " next buffer
-nmap <leader>bp :bp<cr>|              " prev buffer
-nmap <leader>bl :e #<cr>|             " last buffer
 
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -101,3 +98,7 @@ autocmd BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm,*.twig setfiletype jinja
 " Folding and unfolding
 "map <leader>f :set foldmethod=indent<cr>zM<cr>
 "map <leader>F :set foldmethod=manual<cr>zR<cr>
+
+" tpope/vim-unimpaired
+" Sets buffer, quicklist and other shortcuts
+

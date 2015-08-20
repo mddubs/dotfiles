@@ -23,6 +23,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'lepture/vim-jinja'
 Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-unimpaired'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
