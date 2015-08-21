@@ -3,6 +3,7 @@
 " First, load plugins
 source ~/.dotfiles/vimrc.vundles
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SWAP/BACKUP/UNDO
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Create /tmp directories if they don't exist
@@ -14,6 +15,7 @@ set backupdir=/tmp/vim/backup//
 set undofile
 set undodir=/tmp/vim/undo//
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
@@ -38,13 +40,29 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MAPPINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <leader>/ :nohlsearch<cr>|       " turn off search highlighting
-nmap <leader>p :set paste!<cr>|       " toggle paste mode
-nmap <leader>cd :cd %:h<cr>|          " set current directory
-nmap <leader>so :source $MYVIMRC<cr>| " reload config
+" Toggle paste
+nmap <leader>p :set paste!<cr>
+" Set current directory
+nmap <leader>cd :cd %:h<cr>
+" Reload config
+nmap <leader>so :source $MYVIMRC<cr>
+" Turn off search highlighting
+nmap <leader>/ :nohlsearch<cr>
+" Find in current file
+map <leader>ff :vimgrep //gj % <bar>cw<left><left><left><left><left><left><left><left><left>
+" Find in all files
+map <leader>fa :vimgrep //gj **/* <bar>cw<left><left><left><left><left><left><left><left><left><left><left><left>
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " flazz/vim-colorschemes
@@ -86,6 +104,8 @@ nmap <leader>gr :Gread<cr>
 nmap <leader>gf :Gfetch<cr> :clast<cr>
 nmap <leader>gl :Gpull<cr> :clast<cr>
 nmap <leader>gp :Gpush<cr> :clast<cr>
+" Show :Glog output in quickfix window
+" autocmd QuickFixCmdPost *grep* cwindow
 
 " christoomey/vim-tmux-navigator
 " Sets C-hjkl window movement automatically.
